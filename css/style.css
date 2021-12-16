@@ -1,0 +1,67 @@
+/* .bg-elis {
+    background-color: aquamarine !important;
+} */
+
+/* Dark Background */
+
+.dark-bg {
+    background-image: linear-gradient(rgba(0,0,0, .3), rgba(0,0,0, .3)), url('../img/main_bg.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+#hero .container {
+    height: 50vh;
+}
+
+.generic {
+    padding: 100px 0;
+}
+
+/* Latest Section */
+
+section#Latest .latest-item img{
+    min-height: 100%;
+    width: 100%;
+}
+
+section#Latest button {
+    max-height: 250px;
+    padding: 0;
+    overflow: hidden;
+}
+
+section#Latest .latest-item {
+    position: relative;
+}
+
+section#Latest .latest-item:hover .overlay {
+    opacity: 1;
+    background: rgba(255, 153, 0, .7);
+}
+
+section#Latest .latest-item:hover i {
+    opacity: 1;
+    transform: none;
+}
+
+section#Latest .overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 153, 0, 1);
+    opacity: .5;
+    color: #fff;
+    transition: all .5s;
+    
+}
+
+section#Latest .overlay i  {
+    transform: translateY(20px);
+    transition: all .5s;
+    opacity: 0;
+    font-size: 2rem;
+}
